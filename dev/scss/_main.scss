@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    font-family: 'montserratthin';
+}
+.container{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+h2{
+    padding: 17px 0px 15px 0px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #fff;
+    text-align: center;
+}
+h3{
+    margin: 0;
+    color: #14475F;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    padding: 41px 0 0 0;
+}
+p{
+    margin: 10px 0 0 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #414042;
+}
+.h2{
+    background: #14475F;
+    min-height: 87px;
+}
+.cards > p{
+    margin: 41px 0 19px 0;
+    line-height: 27px;
+}
+.card{
+    list-style: none;
+    margin: 0 -15px;
+    padding: 0;
+    counter-reset: heading;
+}
+.card-img{
+    display: inline-block;
+    background: #fff;
+    border: 15px solid #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.card li{
+    display: inline-block;
+    position: relative;
+    margin-right: -4px;
+    width: calc(100% / 2);
+    padding: 0 15px 30px 15px;
+    counter-increment: heading;
+
+    &:before{
+        content: counter(heading);
+        font-family:'bebas_neueregular';
+        font-size: 162px;
+        line-height: 162px;
+        color: #2891B2;
+        position: absolute;
+        right: 27px;
+        bottom: 25px;
+    }
+}
+.cards2{
+    background: #1085A9;
+    padding: 30px 30px;
+}
+.card p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    margin: 0;
+    padding: 20px 0 59px 0;
+}
+.card span{
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 0.5;
+    padding: 0 0 21px 0;
+}
+.ex img{
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.ex a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.ex a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    bottom: -7px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.ex a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.card-content > .card-p3{
+    padding: 20px 0 6px 0;
+}
